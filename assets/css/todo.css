@@ -1,22 +1,55 @@
 @import 'reset.css';
 @import 'variables.css';
 
-.menu, .details, .container{
+.menu, .details, .container {
     border: var(--border);
     height: 100vh;
 }
-.menu{
+.menu {
     width: var(--menuWidth);
     border-color: #24ff00  ;
 }
 
-.container{
+.container {
     width: calc(100% - (var(--menuWidth) + var(--detailsWidth)));
     border-color: #Fa00ff;
 }
 
-.details{
+.details {
     width: var(--detailsWidth);
     border-color:#0000af;
-    
+
 }
+
+body {
+    font-family: 'Roboto', 'Lato', sans-serif;
+}
+
+/* INICIO menu - header*/
+
+.menu > .menu__header__profile {
+    flex-direction: column;
+    font-size: 0.7em;
+}
+
+.menu input[type="search"],
+.menu input[type="search"]::placeholder{
+    font-size: 1em;
+}
+
+.menu .menu__header__profile > div{
+   width: var(--menuWidth);
+   align-items: center;
+   justify-content: space-around;
+}
+
+.menu .header__img__profile {
+    width: 20%;
+}
+
+.menu .menu__header__profile svg{
+    width: 24px;
+    height: 24px;
+}
+
+/* FIM menu - header*/
