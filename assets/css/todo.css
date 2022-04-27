@@ -86,7 +86,7 @@ body {
 }
 
 .menu > .activity ul li:hover{
-    background-color:rgba(100, 100, 100, 1);
+    background-color:rgba(100, 100, 100, 1); 
     color:white;
     cursor: pointer;
 }
@@ -94,4 +94,17 @@ body {
 .menu > .activity ul li > svg{
     margin-right: 10%;
 }
+
+header.menu__header__profile > div:first-child{ /*altera a primeira div dentro do header*/
+    margin-left:15px
+}
+
+header.menu__header__profile > div{
+    margin-top: 15px;
+}
+
+header.menu__header__profile > div > img{
+    margin-right: 10px;
+}
+
 /* FIM menu - header*/
