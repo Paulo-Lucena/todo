@@ -2,9 +2,17 @@
 @import 'variables.css';
 
 .menu, .details, .container {
-    border: var(--border);
     height: 100vh;
 }
+
+.menu{
+    background-color: #f2f2f2;
+}
+
+.details {
+    border: var(--border);
+}
+
 .menu {
     width: var(--menuWidth);
     border-color: #24ff00;
@@ -86,7 +94,7 @@ body {
 }
 
 .menu > .activity ul li:hover{
-    background-color:rgba(100, 100, 100, 1); 
+    background-color:rgba(100, 100, 100, 0.1); 
     color:white;
     cursor: pointer;
 }
@@ -108,3 +116,57 @@ header.menu__header__profile > div > img{
 }
 
 /* FIM menu - header*/
+
+/* INICIO main - container*/
+
+.container{
+    width: 100%;
+    height: inherit;
+    flex-direction: column;
+    background: url('../imagens/bg-phone.jpg') no-repeat center;
+    background-size: cover;
+
+}
+
+.container > header,
+.container > footer{
+    height: 133px;
+    border: solid 1px red;
+}
+
+.container > section.tasks {
+    height: calc(100vh - (133px * 2));
+}
+
+.container > header{
+    width: 100%;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px #333;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container > header > div:first-child{
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+/* tablet */
+@media(min-width: 768px){
+    .container{
+        background: url('../imagens/bg-tablet.jpg') no-repeat center;
+        background-size: cover;
+    }
+    
+
+}
+/* Desktop */
+@media(min-width:1920px){
+    .container{
+        background: url('../imagens/bg-desktop.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+}
+/* FIM main - container*/
