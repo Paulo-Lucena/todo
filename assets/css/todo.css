@@ -94,7 +94,7 @@ body {
 }
 
 .menu > .activity ul li:hover{
-    background-color:rgba(100, 100, 100, 0.1); 
+    background-color:rgba(100, 100, 100, 1); 
     color:white;
     cursor: pointer;
 }
