@@ -41,7 +41,7 @@ form.addEventListener("submit",(e) => {
 newTask.addEventListener('keyup', (e)=>{
     e.preventDefault();
     e.stopPropagation();
-    if(e.key =='Enter'){
+    if(e.key =='Enter' && newTask.value){
         alert(newTask.value);
         db.push({id: Number(db.length)+1, title: newTask.value, done: false});
         newTask.value = '';
