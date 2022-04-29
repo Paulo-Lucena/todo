@@ -152,6 +152,22 @@ header.menu__header__profile > div > img{
     justify-content: space-between;
 }
 
+.task {
+    width: 90%;
+    margin: 2% 5%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(220, 220, 220, 0.7);
+    border-radius: 5px;
+}
+
+.task:hover {
+    background:rgb(220,220,220);
+    cursor: pointer;
+}
+
 /* tablet */
 @media(min-width: 768px){
     .container{

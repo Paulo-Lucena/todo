@@ -41,10 +41,16 @@ form.addEventListener("submit",(e) => {
 newTask.addEventListener('keyup', (e)=>{
     e.preventDefault();
     e.stopPropagation();
-    if(e.key =='Enter' && newTask.value){
+    if(e.key =='Enter'){
+        if(!newTask.value){
+            alert('[ERRO] - Digite algo');
+        } else {
+            const d = new Date();
+            const today = `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`;
         alert(newTask.value);
-        db.push({id: Number(db.length)+1, title: newTask.value, done: false});
+        db.push({id: Number(db.length) + 1, title: newTask.value, done: false, dueDate: today});
         newTask.value = '';
+        console.log(db);
+        }
     }
-    console.log(e);
 });
