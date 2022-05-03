@@ -53,6 +53,8 @@ newTask.addEventListener('keyup', (e)=>{
             const today = `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`;
 
         db.push({id: Number(db.length) + 1, title: newTask.value, done: false, dueDate: today});
+        document.querySelector(".tasks").innerHTML = '';
+        getAllTasks(db);
         newTask.value = '';
         console.log(db);
         }

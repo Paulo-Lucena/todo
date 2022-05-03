@@ -74,7 +74,6 @@ body {
     padding-left: 5%;
     border: none;
     background: none;
-
 }
 
 .menu > .activity ul{
@@ -90,7 +89,6 @@ body {
     align-items: center;
     padding-left: 5%;
     font-size: 0.9em;
-
 }
 
 .menu > .activity ul li:hover{
@@ -150,6 +148,10 @@ header.menu__header__profile > div > img{
 .container > header > div:first-child{
     margin-top: 2%;
     justify-content: space-between;
+}
+
+.tasks{
+    flex-direction: column;
 }
 
 .task {
